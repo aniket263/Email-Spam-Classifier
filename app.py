@@ -102,6 +102,7 @@ if st.button("🔍 Analyze Message"):
     if message.strip() == "":
         st.warning("⚠️ Please enter a message.")
     else:
+
         message_vector = vectorizer.transform([message])
         prediction = model.predict(message_vector)
 
